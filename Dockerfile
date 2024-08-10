@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:alpine3.19
 WORKDIR /app
 COPY connection.py .
 COPY init.sql /app/

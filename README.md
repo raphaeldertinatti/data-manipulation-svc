@@ -17,10 +17,20 @@ Certifique-se de ter a seguintes ferramentas instaladas:
 
 ### Configuração e Execução
 
-**Passo 1: Clonar o Repositório**
+**Passo 1: Clonar o Repositório**  
 Clone este repositório para a sua máquina local:
 
 ```
 git clone <URL_DO_REPOSITORIO>
 cd data-manipulation-service
+```
+**Passo 2: Docker Compose**  
+O projeto utiliza Docker Compose para orquestrar os serviços necessários. O arquivo docker-compose.yml define três serviços:
+
+**db:** Um container com PostgreSQL que armazena os dados.  
+**adminer:** Uma interface web para gerenciar o banco de dados PostgreSQL e visualizar as tabelas.  
+**data_loader:** Um container que executa o script principal (main.py) para carregar e processar os dados.  
+Para construir e executar os serviços, use o comando:  
+```
+docker-compose up --build
 ```

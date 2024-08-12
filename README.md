@@ -63,7 +63,7 @@ Fornece funções para validar CPFs e CNPJs usando a biblioteca [validate-docbr]
 **app/db_connector.py**  
 Contém a classe DBConnector, responsável por gerenciar a conexão com o banco de dados PostgreSQL.  
 
-**main.py**
+**main.py**  
 Script que coordena a execução do serviço, desde a conexão com o banco de dados até a execução do carregamento de dados.
 
 ## Dependências

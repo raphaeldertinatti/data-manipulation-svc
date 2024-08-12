@@ -52,7 +52,7 @@ Use as credenciais abaixo para acessar o banco de dados:
 - **Password**: postgres
 - **Database**: db_clientes
 
-Neste interface você poderá verificar a tabela criada e como ficaram a disposição dos dados após carga.
+Nesta interface você poderá verificar a tabela criada e como ficaram a disposição dos dados após carga.
 
 ### Descrição dos Componentes
 **app/data_cleaner.py**  

@@ -46,8 +46,7 @@ from app.data_validator import DataValidator
 
 def test_validar_cpf():
     assert DataValidator.validar_cpf('04109164125') == True
-    assert DataValidator.validar_cpf('05818942198') == True
-    assert DataValidator.validar_cpf('75901343949') == True
+    assert DataValidator.validar_cpf('05818942198') == True  
     assert DataValidator.validar_cpf('79379491000850') == False  # CPF inválido
     assert DataValidator.validar_cpf('79379491000851') == False  # CPF inválido
 

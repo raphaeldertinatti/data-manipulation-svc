@@ -77,6 +77,7 @@ O projeto utiliza as seguintes bibliotecas, conforme arquivo requirements.txt:
 - **[pandas](https://pypi.org/project/pandas/)** (manipulação e análise de dados em Python)
 - **[regex](https://pypi.org/project/regex/)** (expressões regulares, uma ferramenta poderosa para encontrar padrões em texto)
 - **[validate-docbr](https://pypi.org/project/validate-docbr/)** (específica para a validação de documentos brasileiros, como CPF, CNPJ, RG e outros.)
+- **[pytest](https://pypi.org/project/pytest/)**: (execução de testes automatizados).
 
 ## Execução do Serviço
 O serviço desenvolvido realiza um processo manipulação de dados que inclui as seguintes etapas:  
@@ -93,5 +94,8 @@ Após a limpeza, o serviço valida os valores de CPF e CNPJ usando as biblioteca
 - **Carga dos Dados:**  
 Após o processo de limpeza e validação, os dados são carregados na tabela base_teste do banco de dados PostgreSQL usando o comando COPY. O serviço então confirma as alterações no banco, garantindo a integridade dos dados carregados.
 
+## Testes Automatizados com Pytest
+Este projeto utiliza o pytest para a execução de testes automatizados. Os testes foram configurados para validar as funcionalidades principais do projeto, incluindo a limpeza e validação de dados.
+Além disso, o projeto está em integração contínua com o Github Actions, validando e realizando os testes a cada pull ou push request.
 
 

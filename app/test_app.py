@@ -16,16 +16,16 @@ def test_higienizar_cnpj():
 
 def test_garantir_tipo_numerico():
     df = pd.DataFrame({
-        'col1': ['1,234', '5.678', '9,000'],
-        'col2': ['1,23', '4.56', '7,89']
+        'col1': ['1234,34', '5678,58', '9000,45'],
+        'col2': ['123,33', '456,88', '789,89']
     })
     df = DataCleaner.garantir_tipo_numerico(df, ['col1', 'col2'])
-    assert df['col1'].iloc[0] == 1234.0
-    assert df['col1'].iloc[1] == 5678.0
-    assert df['col1'].iloc[2] == 9000.0
-    assert df['col2'].iloc[0] == 1.23
-    assert df['col2'].iloc[1] == 4.56
-    assert df['col2'].iloc[2] == 7.89
+    assert df['col1'].iloc[0] == 1234.34
+    assert df['col1'].iloc[1] == 5678.58
+    assert df['col1'].iloc[2] == 9000.45
+    assert df['col2'].iloc[0] == 123.33
+    assert df['col2'].iloc[1] == 456.88
+    assert df['col2'].iloc[2] == 789.89
 
 def test_substituir_null_por_vazio():
     df = pd.DataFrame({

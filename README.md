@@ -41,7 +41,7 @@ Configurar o banco de dados PostgreSQL.
 Executar o script SQL (init.sql) para criar a tabela que receberá a carga de dados no banco.  
 Executar o serviço de carregamento de dados.  
 
-**Passo 4: Acessar a Interface Adminer**  
+**Passo 3: Acessar a Interface Adminer**  
 Após executar o Docker Compose, a interface Adminer estará disponível em [http://localhost:8080](http://localhost:8080).  
 Use as credenciais abaixo para acessar o banco de dados:  
 

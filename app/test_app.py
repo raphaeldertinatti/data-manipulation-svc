@@ -1,8 +1,8 @@
 import pytest
-from .db_connector import DBConnector
-from .data_loader import DataLoader
-from .data_cleaner import DataCleaner
-from .data_validator import DataValidator
+from app.db_connector import DBConnector
+from app.data_loader import DataLoader
+from app.data_cleaner import DataCleaner
+from app.data_validator import DataValidator
 from unittest.mock import Mock
 
 # Testes para a conexão ao banco de dados

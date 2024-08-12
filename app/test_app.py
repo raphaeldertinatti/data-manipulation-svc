@@ -4,7 +4,6 @@ import pandas as pd
 import pytest
 import time
 from psycopg2 import connect
-from pytest_postgresql import factories
 
 # TESTE01: DATA_CLEANER.
 from app.data_cleaner import DataCleaner

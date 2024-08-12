@@ -6,3 +6,20 @@
 ### Visão Geral
 Este projeto é um serviço de manipulação de dados e persistência em um banco de dados relacional (PostgreSQL), desenvolvido em Python. O serviço recebe um arquivo TXT como entrada, persiste os dados em um banco de dados, realiza higienização, valida CPFs/CNPJs e é totalmente containerizado usando Docker.
 
+
+### Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas:
+
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### Configuração e Execução
+
+**Passo 1: Clonar o Repositório**
+Clone este repositório para a sua máquina local:
+
+```
+git clone <URL_DO_REPOSITORIO>
+cd data-manipulation-service
+```

@@ -32,7 +32,7 @@ O projeto utiliza Docker Compose para orquestrar os serviços necessários. O ar
 - **data_loader:** Um container que executa o script principal (main.py) para carregar e processar os dados.
   
 Para construir e executar os serviços, use o comando abaixo:  
-obs (esteja dentro da pasta do repositório, na mesma pasta do arquivo docker-compose.yml):  
+obs (esteja dentro da pasta do repositório, na mesma pasta do arquivo docker-compose.yml, o Docker Desktop deve estar aberto (Windows) ou Docker Engine instalado (Linux)):  
 ```
 docker-compose up --build
 ```

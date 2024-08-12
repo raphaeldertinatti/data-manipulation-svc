@@ -14,8 +14,7 @@ def test_connect_to_db():
         'database': 'db_clientes',
         'user': 'postgres',
         'password': 'postgres',
-        'host': 'db',
-        'port': 5432
+        'host': 'db'
     }
     db = DBConnector(**db_config)
     db.connect()

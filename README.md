@@ -52,6 +52,8 @@ Use as credenciais abaixo para acessar o banco de dados:
 - **Password**: postgres
 - **Database**: db_clientes
 
+Neste interface você poderá verificar a tabela criada e como ficaram a disposição dos dados após carga.
+
 ### Descrição dos Componentes
 **app/data_cleaner.py**  
 Este script contém funções para higienização de dados removendo caracteres não numéricos dos campos contendo CPF e CNPJ, substituindo a palavra NULL por uma string vazia, além de garantir que colunas numéricas sejam corretamente formatadas, substituindo as vírgulas por ponto, conforme padrão do SGBD.
@@ -75,4 +77,21 @@ O projeto utiliza as seguintes bibliotecas, conforme arquivo requirements.txt:
 - pandas (manipulação e análise de dados em Python)
 - regex (expressões regulares, uma ferramenta poderosa para encontrar padrões em texto)
 - validate-docbr (específica para a validação de documentos brasileiros, como CPF, CNPJ, RG e outros.)
+
+## Execução do Serviço
+O serviço desenvolvido realiza um processo manipulação de dados que inclui as seguintes etapas:  
+
+- **Limpeza dos Dados:**  
+Os dados são submetidos a um processo de limpeza, onde CPFs e CNPJs são normalizados removendo caracteres especiais. Isso garante que as informações estejam em um formato consistente para processamento. Todas as ocorrências de 'NULL' nas colunas do dataset são substituídas por strings vazias, evitando erros durante a carga no banco de dados.
+
+- **Validação dos Dados:**  
+Após a limpeza, o serviço valida os valores de CPF e CNPJ usando as bibliotecas especializadas validate-docbr. Três novas colunas são adicionadas ao dataset para armazenar os resultados da validação:  
+**CPF_VALIDO:** Indica se o CPF fornecido é válido (True) ou inválido (False).
+**CNPJ_LMF_VALIDO:** Indica se o CNPJ da loja mais frequente é válido (True) ou inválido (False).
+**CNPJ_LUC_VALIDO:** Indica se o CNPJ da loja da última compra é válido (True) ou inválido (False).
+  
+- **Carga dos Dados:**  
+Após o processo de limpeza e validação, os dados são carregados na tabela base_teste do banco de dados PostgreSQL usando o comando COPY. O serviço então confirma as alterações no banco, garantindo a integridade dos dados carregados.
+
+
 

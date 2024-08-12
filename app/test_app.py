@@ -2,7 +2,7 @@
 
 import pandas as pd
 import pytest
-from app.datacleaner import DataCleaner
+from ..app.datacleaner import DataCleaner
 
 def test_higienizar_cpf():
     assert DataCleaner.higienizar_cpf('123.456.789-00') == '12345678900'

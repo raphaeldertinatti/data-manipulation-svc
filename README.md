@@ -13,7 +13,7 @@ Certifique-se de ter a seguintesferramenta instaladas:
 
 - [Docker Desktop](https://www.docker.com/get-started)
   ou
-- [Docker Engine]([https://docs.docker.com/compose/install/](https://docs.docker.com/engine/install/))
+- [Docker Engine](https://docs.docker.com/engine/install/)
 
 ### Configuração e Execução
 

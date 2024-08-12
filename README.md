@@ -46,9 +46,10 @@ Executar o serviço de carregamento de dados.
 Após executar o Docker Compose, a interface Adminer estará disponível em [http://localhost:8080](http://localhost:8080).  
 Use as credenciais abaixo para acessar o banco de dados:  
 
-- **SGBD**: Postgres  
-- **User**: Postgres  
-- **Password**: Postgres
+- **Sistema**: PostgreSQL
+- **Servidor**: db  
+- **User**: postgres  
+- **Password**: postgres
 - **Database**: db_clientes
 
 ### Descrição dos Componentes

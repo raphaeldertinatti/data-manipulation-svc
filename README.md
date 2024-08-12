@@ -51,14 +51,14 @@ Use as credenciais abaixo para acessar o banco de dados:
 - **Database**: db_clientes
 
 ### Descrição dos Componentes
-1. app/data_cleaner.py
+**app/data_cleaner.py**  
 Este script contém funções para higienização de dados removendo caracteres não numéricos dos campos contendo CPF e CNPJ, substituindo a palavra NULL por uma string vazia, além de garantir que colunas numéricas sejam corretamente formatadas, substituindo as vírgulas por ponto, conforme padrão do SGBD.
 
-2. app/data_loader.py
+**app/data_loader.py**  
 O script principal para realização da carga de dados do arquivo de texto para o banco de dados. Ele utiliza o data_cleaner para limpar os dados e o data_validator para validar os campos de CPF e CNPJ antes de carregá-los.
 
-3. app/data_validator.py
+**app/data_validator.py**  
 Fornece funções para validar CPFs e CNPJs usando a biblioteca [validate-docbr](https://pypi.org/project/validate-docbr/).
 
-4. app/db_connector.py
+**app/db_connector.py**  
 Contém a classe DBConnector, responsável por gerenciar a conexão com o banco de dados PostgreSQL.

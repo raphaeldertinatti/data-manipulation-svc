@@ -22,7 +22,6 @@ Clone este repositório para a sua máquina local:
 
 ```
 git clone https://github.com/raphaeldertinatti/data-manipulation-svc.git
-cd data-manipulation-service
 ```
 **Passo 2: Docker Compose**  
 O projeto utiliza Docker Compose para orquestrar os serviços necessários. O arquivo docker-compose.yml define três serviços:
@@ -34,6 +33,7 @@ O projeto utiliza Docker Compose para orquestrar os serviços necessários. O ar
 Para construir e executar os serviços, use o comando abaixo:  
 obs (esteja dentro da pasta do repositório, na mesma pasta do arquivo docker-compose.yml, o Docker Desktop deve estar aberto (Windows) ou Docker Engine instalado e com o serviço inicializado (Linux)):  
 ```
+cd data-manipulation-service
 docker-compose up --build
 ```
 Isso irá:  

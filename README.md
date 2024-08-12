@@ -73,10 +73,10 @@ Script que coordena a execução do serviço, desde a conexão com o banco de da
 ## Dependências
 O projeto utiliza as seguintes bibliotecas, conforme arquivo requirements.txt:  
 - **[psycopg2-binary](https://pypi.org/project/psycopg2-binary/)** (conexão de aplicações Python com bancos de dados PostgreSQL)
-- sqlalchemy (permite interagir com bancos de dados relacionais usando objetos Python)
-- pandas (manipulação e análise de dados em Python)
-- regex (expressões regulares, uma ferramenta poderosa para encontrar padrões em texto)
-- validate-docbr (específica para a validação de documentos brasileiros, como CPF, CNPJ, RG e outros.)
+- **[sqlalchemy](https://pypi.org/project/SQLAlchemy/)** (permite interagir com bancos de dados relacionais usando objetos Python)
+- **[pandas](https://pypi.org/project/pandas/)** (manipulação e análise de dados em Python)
+- **[regex](https://pypi.org/project/regex/) (expressões regulares, uma ferramenta poderosa para encontrar padrões em texto)
+- **[validate-docbr](https://pypi.org/project/validate-docbr/) (específica para a validação de documentos brasileiros, como CPF, CNPJ, RG e outros.)
 
 ## Execução do Serviço
 O serviço desenvolvido realiza um processo manipulação de dados que inclui as seguintes etapas:  

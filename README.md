@@ -31,7 +31,8 @@ O projeto utiliza Docker Compose para orquestrar os serviços necessários. O ar
 - **adminer:** Uma interface web para gerenciar o banco de dados PostgreSQL e visualizar as tabelas.  
 - **data_loader:** Um container que executa o script principal (main.py) para carregar e processar os dados.
   
-Para construir e executar os serviços, use o comando (esteja dentro da pasta do repositório, na mesma pasta do arquivo docker-compose.yml):  
+Para construir e executar os serviços, use o comando abaixo:  
+obs (esteja dentro da pasta do repositório, na mesma pasta do arquivo docker-compose.yml):  
 ```
 docker-compose up --build
 ```

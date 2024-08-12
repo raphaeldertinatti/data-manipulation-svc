@@ -21,7 +21,7 @@ Certifique-se de ter a seguintes ferramentas instaladas:
 Clone este repositório para a sua máquina local:
 
 ```
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/raphaeldertinatti/data-manipulation-svc.git
 cd data-manipulation-service
 ```
 **Passo 2: Docker Compose**  

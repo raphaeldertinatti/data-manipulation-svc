@@ -2,6 +2,7 @@
 
 import pandas as pd
 import pytest
+import time
 from psycopg2 import connect
 from pytest_postgresql import factories
 
@@ -64,7 +65,7 @@ from app.data_loader import DataLoader
 postgres_mydb = factories.postgresql_noproc(
     host='localhost', port=5432, user='postgres', password='password'
 )
-
+time.sleep(30)
 @pytest.fixture
 def db_cursor(postgres_mydb):
     conn = connect(

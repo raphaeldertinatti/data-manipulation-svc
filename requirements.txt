@@ -4,3 +4,4 @@ sqlalchemy
 validate-docbr
 regex
 pytest
+pytest-mock

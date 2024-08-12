@@ -86,9 +86,9 @@ Os dados são submetidos a um processo de limpeza, onde CPFs e CNPJs são normal
 
 - **Validação dos Dados:**  
 Após a limpeza, o serviço valida os valores de CPF e CNPJ usando as bibliotecas especializadas validate-docbr. Três novas colunas são adicionadas ao dataset para armazenar os resultados da validação:  
-**CPF_VALIDO:** Indica se o CPF fornecido é válido (True) ou inválido (False).
-**CNPJ_LMF_VALIDO:** Indica se o CNPJ da loja mais frequente é válido (True) ou inválido (False).
-**CNPJ_LUC_VALIDO:** Indica se o CNPJ da loja da última compra é válido (True) ou inválido (False).
+**CPF_VALIDO:** Indica se o CPF fornecido é válido (True) ou inválido (False).  
+**CNPJ_LMF_VALIDO:** Indica se o CNPJ da loja mais frequente é válido (True) ou inválido (False).  
+**CNPJ_LUC_VALIDO:** Indica se o CNPJ da loja da última compra é válido (True) ou inválido (False).  
   
 - **Carga dos Dados:**  
 Após o processo de limpeza e validação, os dados são carregados na tabela base_teste do banco de dados PostgreSQL usando o comando COPY. O serviço então confirma as alterações no banco, garantindo a integridade dos dados carregados.

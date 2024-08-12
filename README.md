@@ -61,4 +61,16 @@ O script principal para realização da carga de dados do arquivo de texto para 
 Fornece funções para validar CPFs e CNPJs usando a biblioteca [validate-docbr](https://pypi.org/project/validate-docbr/).
 
 **app/db_connector.py**  
-Contém a classe DBConnector, responsável por gerenciar a conexão com o banco de dados PostgreSQL.
+Contém a classe DBConnector, responsável por gerenciar a conexão com o banco de dados PostgreSQL.  
+
+**main.py**
+Script que coordena a execução do serviço, desde a conexão com o banco de dados até a execução do carregamento de dados.
+
+## Dependências
+O projeto utiliza as seguintes bibliotecas, conforme arquivo requirements.txt:  
+- psycopg2-binary (conexão de aplicações Python com bancos de dados PostgreSQL)
+- sqlalchemy (permite interagir com bancos de dados relacionais usando objetos Python)
+- pandas (manipulação e análise de dados em Python)
+- regex (expressões regulares, uma ferramenta poderosa para encontrar padrões em texto)
+- validate-docbr (específica para a validação de documentos brasileiros, como CPF, CNPJ, RG e outros.)
+

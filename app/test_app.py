@@ -1,9 +1,12 @@
 import pytest
+import time
 from app.db_connector import DBConnector
 from app.data_loader import DataLoader
 from app.data_cleaner import DataCleaner
 from app.data_validator import DataValidator
 from unittest.mock import Mock
+
+time.sleep(30)
 
 # Testes para a conexão ao banco de dados
 def test_connect_to_db():

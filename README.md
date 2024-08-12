@@ -27,10 +27,25 @@ cd data-manipulation-service
 **Passo 2: Docker Compose**  
 O projeto utiliza Docker Compose para orquestrar os serviços necessários. O arquivo docker-compose.yml define três serviços:
 
-**db:** Um container com PostgreSQL que armazena os dados.  
-**adminer:** Uma interface web para gerenciar o banco de dados PostgreSQL e visualizar as tabelas.  
-**data_loader:** Um container que executa o script principal (main.py) para carregar e processar os dados.  
+- **db:** Um container com PostgreSQL que armazena os dados.  
+- **adminer:** Uma interface web para gerenciar o banco de dados PostgreSQL e visualizar as tabelas.  
+- **data_loader:** Um container que executa o script principal (main.py) para carregar e processar os dados.
+  
 Para construir e executar os serviços, use o comando:  
 ```
 docker-compose up --build
 ```
+Isso irá:  
+
+Configurar o banco de dados PostgreSQL.  
+Executar o script SQL (init.sql) para criar a tabela que receberá a carga de dados no banco.
+Executar o serviço de carregamento de dados.  
+
+**Passo 4: Acessar a Interface Adminer**
+Após executar o Docker Compose, a interface Adminer estará disponível em [http://localhost:8080](http://localhost:8080).  
+Use as credenciais abaixo para acessar o banco de dados:  
+SGBD: Postgres  
+User: Postgres  
+Password: Postgress
+Database: db_clientes
+

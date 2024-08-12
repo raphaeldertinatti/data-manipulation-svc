@@ -11,8 +11,8 @@ Este projeto é um serviço de manipulação de dados e persistência em um banc
 
 Certifique-se de ter a seguintes ferramentas instaladas:
 
-- [Docker Desktop](https://www.docker.com/get-started) 
-  ou
+- [Docker Desktop](https://www.docker.com/get-started)   
+  ou  
 - [Docker Engine](https://docs.docker.com/engine/install/)
 
 ### Configuração e Execução

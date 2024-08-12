@@ -45,13 +45,13 @@ def test_substituir_null_por_vazio():
 from app.data_validator import DataValidator
 
 def test_validar_cpf():
-    assert DataValidator.validar_cpf(04109164125) == True
-    assert DataValidator.validar_cpf(05818942198) == True
-    assert DataValidator.validar_cpf(75901343949) == True
-    assert DataValidator.validar_cpf(79379491000850) == False  # CPF inválido
-    assert DataValidator.validar_cpf(79379491000851) == False  # CPF inválido
+    assert DataValidator.validar_cpf('04109164125') == True
+    assert DataValidator.validar_cpf('05818942198') == True
+    assert DataValidator.validar_cpf(''75901343949') == True
+    assert DataValidator.validar_cpf(79379491000850') == False  # CPF inválido
+    assert DataValidator.validar_cpf('79379491000851') == False  # CPF inválido
 
 def test_validar_cnpj():
-    assert DataValidator.validar_cnpj(79379491000850) == True   
-    assert DataValidator.validar_cnpj(04109164125) == False  # CNPJ inválido
+    assert DataValidator.validar_cnpj('79379491000850') == True   
+    assert DataValidator.validar_cnpj('04109164125') == False  # CNPJ inválido
     

@@ -9,9 +9,9 @@ Este projeto é um serviço de manipulação de dados e persistência em um banc
 
 ### Pré-requisitos
 
-Certifique-se de ter a seguintesferramenta instaladas:
+Certifique-se de ter a seguintes ferramentas instaladas:
 
-- [Docker Desktop](https://www.docker.com/get-started)
+- [Docker Desktop](https://www.docker.com/get-started) 
   ou
 - [Docker Engine](https://docs.docker.com/engine/install/)
 
